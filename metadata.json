@@ -1,0 +1,8 @@
+{
+  "name": "Remix WireframeGen",
+  "description": "Instantly generate app screen layouts from HTML image links.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
