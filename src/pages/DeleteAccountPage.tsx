@@ -162,7 +162,7 @@ export function DeleteAccountPage() {
                         type="text"
                         value={identifier}
                         onChange={(e) => setIdentifier(e.target.value)}
-                        placeholder="e.g. +91 98290 XXXXX or user@example.com"
+                        placeholder="e.g. +91 89496 67612 or user@example.com"
                         className="w-full px-3.5 py-2.5 rounded-xl bg-[#f1f3f9] border border-[#c7c5cd] text-xs text-[#181c20] focus:outline-none focus:border-[#544ec2]"
                       />
                     </div>

@@ -49,7 +49,7 @@ Before completing App Store Connect questionnaires, execute this code & binary a
 Ensure the following URLs are configured in App Store Connect:
 
 - **Support URL**: `https://multipleride.in/support`
-  - *Status*: Publicly accessible without authentication, contains active email (`support@multipleride.in`), phone (`+91 291 274 0000`), and physical address in Jodhpur.
+  - *Status*: Publicly accessible without authentication, contains active email (`multipleride@gmail.com`), phone (`+91 8949667612`), and physical address in Jodhpur.
 - **Privacy Policy URL**: `https://multipleride.in/privacy`
   - *Status*: Publicly accessible, HTTPS, covers location tracking, single pickup/multi-drop data, and retention guidelines.
 - **Account Deletion URL**: `https://multipleride.in/delete-account`

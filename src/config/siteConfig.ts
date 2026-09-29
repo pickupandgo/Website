@@ -11,8 +11,8 @@ export const siteConfig = {
   operatingCity: 'Jodhpur, Rajasthan, India',
   operatingZoneCode: 'RJ-19',
   
-  supportEmail: import.meta.env.VITE_SUPPORT_EMAIL || 'support@multipleride.in',
-  supportPhone: import.meta.env.VITE_SUPPORT_PHONE || '+91 291 274 0000',
+  supportEmail: import.meta.env.VITE_SUPPORT_EMAIL || 'multipleride@gmail.com',
+  supportPhone: import.meta.env.VITE_SUPPORT_PHONE || '+91 8949667612',
   businessAddress: import.meta.env.VITE_BUSINESS_ADDRESS || 'Nikhil Enterprises, Commercial Corridor, Basni Phase II, Jodhpur, Rajasthan 342005, India',
   
   appStoreUrl: import.meta.env.VITE_APP_STORE_URL || 'https://apps.apple.com/app/multipleride',
@@ -21,7 +21,7 @@ export const siteConfig = {
   grievanceOfficer: {
     name: 'Nodal Grievance Officer',
     designation: 'Head of Customer Relations & Compliance',
-    email: import.meta.env.VITE_GRIEVANCE_EMAIL || 'grievance@multipleride.in',
+    email: import.meta.env.VITE_GRIEVANCE_EMAIL || 'multipleride@gmail.com',
     responseWindow: 'Acknowledgement within 24 hours, resolution within 15 working days',
     address: 'Nikhil Enterprises, Commercial Corridor, Basni Phase II, Jodhpur, Rajasthan 342005, India'
   },

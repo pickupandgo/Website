@@ -227,7 +227,7 @@ export function ContactPage() {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="e.g. +91 98290 XXXXX"
+                          placeholder="e.g. +91 89496 67612"
                           className="w-full px-3.5 py-2.5 rounded-xl bg-[#f1f3f9] border border-[#c7c5cd] text-xs text-[#181c20]"
                         />
                       </div>

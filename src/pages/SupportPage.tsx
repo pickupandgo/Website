@@ -245,7 +245,7 @@ export function SupportPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. +91 98290 XXXXX"
+                      placeholder="e.g. +91 89496 67612"
                       className={`w-full px-3.5 py-2.5 rounded-xl bg-[#f1f3f9] border text-xs text-[#181c20] focus:outline-none ${
                         errors.phone ? 'border-red-500' : 'border-[#c7c5cd] focus:border-[#544ec2]'
                       }`}
