@@ -20,7 +20,7 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 lg:pt-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Hero Left Rail */}
-            <div className="lg:col-span-12 max-w-3xl flex flex-col items-start gap-4">
+            <div className="lg:col-span-6 flex flex-col items-start gap-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#e6e8ee] text-[#181c20]">
                 <span className="w-2 h-2 rounded-full bg-[#544ec2]"></span>
                 <span className="font-code-waybill text-[11px] tracking-wide font-semibold">
@@ -66,6 +66,11 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
                   <div className="text-xs text-[#46464c]">Commercial freight only</div>
                 </div>
               </div>
+            </div>
+
+            {/* Hero Right: Driver App Visual */}
+            <div className="lg:col-span-6 relative flex justify-center items-center">
+              <img src="/driver-app.png" alt="Driver Hub Interface" className="w-full max-w-sm lg:max-w-[320px] xl:max-w-[360px] h-auto drop-shadow-2xl" />
             </div>
 
           </div>
