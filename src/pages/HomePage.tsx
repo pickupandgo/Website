@@ -17,8 +17,8 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
         <div className="absolute -top-32 right-1/4 w-96 h-96 rounded-full bg-[#e2dfff]/40 blur-3xl pointer-events-none"></div>
         <div className="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-[#e0e0fb]/30 blur-3xl pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 lg:pt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 lg:pt-16 lg:min-h-[calc(100vh-100px)] flex flex-col justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Hero Left Rail */}
             <div className="lg:col-span-6 flex flex-col items-start gap-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#e6e8ee] text-[#181c20]">
@@ -69,8 +69,8 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
             </div>
 
             {/* Hero Right: Driver App Visual */}
-            <div className="lg:col-span-6 relative flex justify-center items-center">
-              <img src="/Website_Image_transparent.png" alt="Driver Hub Interface" className="w-full h-auto object-contain max-h-[600px] drop-shadow-2xl" />
+            <div className="lg:col-span-6 relative flex justify-center items-center h-full w-full mt-8 lg:mt-0">
+              <img src="/Website_Image_cropped.png" alt="Driver Hub Interface" className="w-auto h-auto max-h-[60vh] lg:max-h-[85vh] object-contain drop-shadow-2xl" />
             </div>
 
           </div>
