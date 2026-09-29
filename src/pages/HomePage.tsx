@@ -70,7 +70,7 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
 
             {/* Hero Right: Driver App Visual */}
             <div className="lg:col-span-6 relative flex justify-center items-center">
-              <img src="/driver-app.png" alt="Driver Hub Interface" className="w-full max-w-sm lg:max-w-[320px] xl:max-w-[360px] h-auto drop-shadow-2xl" />
+              <img src="/Website_Image.png" alt="Driver Hub Interface" className="w-full max-w-sm lg:max-w-[320px] xl:max-w-[360px] h-auto drop-shadow-2xl" />
             </div>
 
           </div>
