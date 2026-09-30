@@ -296,7 +296,7 @@ export function ServicesPage() {
                   </div>
 
                   {/* Drop 1 */}
-                  <div className="flex items-start gap-4 relative z-10 ml-4 lg:ml-6">
+                  <div className="flex items-start gap-4 relative z-10 ml-2">
                     <div className="w-8 h-8 rounded-lg bg-[#544ec2] text-[#ffffff] flex items-center justify-center font-code-waybill text-xs font-bold shrink-0 shadow-xs">
                       01
                     </div>
@@ -318,7 +318,7 @@ export function ServicesPage() {
                   </div>
 
                   {/* Drop 2 */}
-                  <div className="flex items-start gap-4 relative z-10 ml-4 lg:ml-6">
+                  <div className="flex items-start gap-4 relative z-10 ml-2">
                     <div className="w-8 h-8 rounded-lg bg-[#e2dfff] text-[#0f0069] flex items-center justify-center font-code-waybill text-xs font-bold shrink-0 shadow-xs">
                       02
                     </div>
@@ -340,7 +340,7 @@ export function ServicesPage() {
                   </div>
 
                   {/* Drop 3 */}
-                  <div className="flex items-start gap-4 relative z-10 ml-4 lg:ml-6">
+                  <div className="flex items-start gap-4 relative z-10 ml-2">
                     <div className="w-8 h-8 rounded-lg bg-[#e0e2e8] text-[#46464c] flex items-center justify-center font-code-waybill text-xs font-bold shrink-0">
                       03
                     </div>
