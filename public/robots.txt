@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /dashboard/
 
-Sitemap: https://multipleride.in/sitemap.xml
+Sitemap: https://multipleride.com/sitemap.xml
