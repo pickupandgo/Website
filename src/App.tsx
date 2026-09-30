@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { DispatchModal } from './components/DispatchModal';
 
 import { HomePage } from './pages/HomePage';
 import { ServicesPage } from './pages/ServicesPage';
@@ -32,20 +31,19 @@ function ScrollToTop() {
 }
 
 export default function App() {
-  const [dispatchModalOpen, setDispatchModalOpen] = useState(false);
 
   return (
     <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-[#f7f9ff] text-[#181c20]">
-        <Header onOpenDispatch={() => setDispatchModalOpen(true)} />
+        <Header />
         
         <main className="grow pt-20">
           <Routes>
-            <Route path="/" element={<HomePage onOpenDispatch={() => setDispatchModalOpen(true)} />} />
-            <Route path="/services" element={<ServicesPage onOpenDispatch={() => setDispatchModalOpen(true)} />} />
-            <Route path="/how-it-works" element={<HowItWorksPage onOpenDispatch={() => setDispatchModalOpen(true)} />} />
-            <Route path="/vehicles" element={<VehiclesPage onOpenDispatch={() => setDispatchModalOpen(true)} />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/how-it-works" element={<HowItWorksPage />} />
+            <Route path="/vehicles" element={<VehiclesPage />} />
             <Route path="/driver-partners" element={<DriverPartnersPage />} />
             <Route path="/safety" element={<SafetyPage />} />
             <Route path="/about" element={<AboutPage />} />
@@ -63,10 +61,6 @@ export default function App() {
 
         <Footer />
 
-        <DispatchModal
-          isOpen={dispatchModalOpen}
-          onClose={() => setDispatchModalOpen(false)}
-        />
       </div>
     </BrowserRouter>
   );

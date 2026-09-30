@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 
-interface HomePageProps {
-  onOpenDispatch: () => void;
-}
-
-export function HomePage({ onOpenDispatch }: HomePageProps) {
+export function HomePage() {
   const [driverTripStatus, setDriverTripStatus] = useState<'idle' | 'accepted' | 'declined'>('idle');
 
   return (
@@ -897,12 +893,11 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
                     </div>
                   </div>
 
-                  <button
-                    onClick={onOpenDispatch}
-                    className="p-2.5 rounded-xl bg-[#050719] text-[#ffffff] text-center font-headline text-xs font-bold hover:bg-[#181a2d] transition-colors"
+                  <div
+                    className="p-2.5 rounded-xl bg-[#050719] text-[#ffffff] text-center font-headline text-xs font-bold"
                   >
                     Manage Active Route
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -923,13 +918,13 @@ export function HomePage({ onOpenDispatch }: HomePageProps) {
             </div>
 
             <div className="flex flex-wrap items-center gap-3 shrink-0">
-              <button
-                onClick={onOpenDispatch}
+              <Link
+                to="/services"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#050719] text-[#ffffff] font-headline text-sm font-bold hover:bg-[#181a2d] transition-all shadow-md"
               >
-                <span>Get Started</span>
+                <span>Explore Services</span>
                 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+              </Link>
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#e6e8ee] text-[#181c20] font-headline text-sm font-semibold hover:bg-[#e0e2e8] transition-colors"

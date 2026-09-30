@@ -2,11 +2,7 @@ import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 
-interface VehiclesPageProps {
-  onOpenDispatch: () => void;
-}
-
-export function VehiclesPage({ onOpenDispatch }: VehiclesPageProps) {
+export function VehiclesPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Header */}
@@ -97,13 +93,7 @@ export function VehiclesPage({ onOpenDispatch }: VehiclesPageProps) {
                 </div>
 
                 <div className="pt-2 flex items-center gap-4">
-                  <button
-                    onClick={onOpenDispatch}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#050719] text-[#ffffff] font-headline text-xs font-bold hover:bg-[#181a2d] transition-all"
-                  >
-                    <span>Request with this Vehicle</span>
-                    <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-                  </button>
+
                   <Link
                     to="/how-it-works"
                     className="text-xs font-bold text-[#544ec2] hover:underline"

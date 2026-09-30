@@ -2,11 +2,7 @@ import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 
-interface ServicesPageProps {
-  onOpenDispatch: () => void;
-}
-
-export function ServicesPage({ onOpenDispatch }: ServicesPageProps) {
+export function ServicesPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Top Ambient Glow Field & Title */}
@@ -598,12 +594,6 @@ export function ServicesPage({ onOpenDispatch }: ServicesPageProps) {
 
               <div className="pt-4 border-t border-[#eceef4] flex items-center justify-between">
                 <span className="text-xs text-[#46464c]">Piaggio Ape / Bajaj Maxima spec</span>
-                <button
-                  onClick={onOpenDispatch}
-                  className="text-xs text-[#544ec2] font-bold hover:underline inline-flex items-center gap-1"
-                >
-                  Select in dispatch <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-                </button>
               </div>
             </div>
 
@@ -646,12 +636,6 @@ export function ServicesPage({ onOpenDispatch }: ServicesPageProps) {
 
               <div className="pt-4 border-t border-[#eceef4] flex items-center justify-between">
                 <span className="text-xs text-[#46464c]">Tata Ace / Bolero Maxi spec</span>
-                <button
-                  onClick={onOpenDispatch}
-                  className="text-xs text-[#544ec2] font-bold hover:underline inline-flex items-center gap-1"
-                >
-                  Select in dispatch <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-                </button>
               </div>
             </div>
           </div>
@@ -678,12 +662,12 @@ export function ServicesPage({ onOpenDispatch }: ServicesPageProps) {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 relative z-10 w-full sm:w-auto">
-              <button
-                onClick={onOpenDispatch}
+              <Link
+                to="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#ffffff] text-[#050719] font-headline text-sm font-bold hover:bg-[#eceef4] transition-all shadow-md"
               >
-                Get Started
-              </button>
+                Contact Desk
+              </Link>
               <Link
                 to="/vehicles"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#181a2d] text-[#ffffff] font-headline text-sm font-semibold hover:bg-[#181a2d]/80 transition-all border border-[#c7c5cd]/20"

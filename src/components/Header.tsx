@@ -2,11 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 
-interface HeaderProps {
-  onOpenDispatch?: () => void;
-}
-
-export function Header({ onOpenDispatch }: HeaderProps) {
+export function Header() {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -115,16 +111,7 @@ export function Header({ onOpenDispatch }: HeaderProps) {
             })}
 
             <div className="pt-4 mt-2 border-t border-[#eceef4] flex flex-col gap-2">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenDispatch?.();
-                }}
-                className="w-full py-3 rounded-xl bg-[#544ec2] text-[#ffffff] font-headline text-sm font-bold text-center flex items-center justify-center gap-2 shadow-md"
-              >
-                <span>Request Pickup / Multi-Drop</span>
-                <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+
               <div className="flex items-center justify-around pt-2 text-xs text-[#46464c]">
                 <Link to="/faq" onClick={() => setMobileMenuOpen(false)} className="hover:underline">FAQ</Link>
                 <span>·</span>

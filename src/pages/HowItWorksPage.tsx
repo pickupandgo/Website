@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 
-interface HowItWorksPageProps {
-  onOpenDispatch: () => void;
-}
-
-export function HowItWorksPage({ onOpenDispatch }: HowItWorksPageProps) {
+export function HowItWorksPage() {
   const [activeMode, setActiveMode] = useState<'multidrop' | 'single'>('multidrop');
 
   return (
@@ -861,13 +857,13 @@ export function HowItWorksPage({ onOpenDispatch }: HowItWorksPageProps) {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto relative z-10">
-              <button
-                onClick={onOpenDispatch}
+              <Link
+                to="/contact"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#544ec2] hover:bg-[#544ec2]/90 text-[#ffffff] font-headline text-sm font-bold text-center transition-all shadow-md flex items-center justify-center gap-2"
               >
-                <span>Get Started</span>
+                <span>Contact Desk</span>
                 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+              </Link>
               <Link
                 to="/driver-partners"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#181a2d] text-[#ffffff] font-headline text-sm font-semibold text-center hover:bg-[#181a2d]/80 transition-all flex items-center justify-center gap-2 border border-[#c7c5cd]/20"
