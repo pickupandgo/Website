@@ -5,4 +5,4 @@ Disallow: /api/
 Disallow: /login/
 Disallow: /dashboard/
 
-Sitemap: https://multipleride.com/sitemap.xml
+Sitemap: https://www.multipleride.com/sitemap.xml
