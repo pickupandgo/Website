@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
+import { GooglePlayButton } from './GooglePlayButton';
 
 export function Header() {
   const location = useLocation();
@@ -65,6 +66,9 @@ export function Header() {
             <span className="w-2 h-2 rounded-full bg-[#544ec2] animate-pulse ml-0.5" title="Active Hub Jodhpur"></span>
           </div>
 
+          {/* Google Play Store */}
+          <GooglePlayButton heightClass="h-9 sm:h-10" className="hidden sm:inline-flex" />
+
 
           {/* Mobile Menu Button */}
           <button
@@ -110,7 +114,10 @@ export function Header() {
               );
             })}
 
-            <div className="pt-4 mt-2 border-t border-[#eceef4] flex flex-col gap-2">
+            <div className="pt-4 mt-2 border-t border-[#eceef4] flex flex-col gap-3">
+              <div className="flex justify-center py-1">
+                <GooglePlayButton heightClass="h-12" />
+              </div>
 
               <div className="flex items-center justify-around pt-2 text-xs text-[#46464c]">
                 <Link to="/faq" onClick={() => setMobileMenuOpen(false)} className="hover:underline">FAQ</Link>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
+import { GooglePlayButton } from './GooglePlayButton';
 
 export function Footer() {
   return (
@@ -26,6 +27,10 @@ export function Footer() {
               <span className="text-[12px] font-medium text-[#46464c]">
                 MultipleRide is operated by {siteConfig.legalBusinessName}.
               </span>
+            </div>
+
+            <div className="pt-1">
+              <GooglePlayButton heightClass="h-11" />
             </div>
 
             <div className="text-[12px] text-[#77767d] mt-1 space-y-1">

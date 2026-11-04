@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { siteConfig } from '../config/siteConfig';
 import { ImageWithFallback } from '../components/ImageWithFallback';
+import { GooglePlayButton } from '../components/GooglePlayButton';
 
 export function HomePage() {
   const [driverTripStatus, setDriverTripStatus] = useState<'idle' | 'accepted' | 'declined'>('idle');
@@ -34,6 +35,7 @@ export function HomePage() {
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-1 w-full sm:w-auto">
+                <GooglePlayButton heightClass="h-12" />
 
                 <a
                   href="#services-overview"
@@ -811,33 +813,13 @@ export function HomePage() {
                 </div>
               </div>
 
-              {/* App Store Placeholders */}
-              <div className="flex flex-wrap items-center gap-3 pt-2">
-                <a
-                  href={siteConfig.googlePlayUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 px-4 rounded-xl bg-[#050719] text-[#ffffff] flex items-center gap-2.5 shadow-xs hover:bg-[#181a2d] transition-colors"
-                >
-                  <span className="material-symbols-outlined text-[24px]">phone_android</span>
-                  <div className="flex flex-col text-left">
-                    <span className="text-[10px] uppercase text-[#ffffff]/70 leading-none">Get it on</span>
-                    <span className="font-headline text-[13px] leading-tight font-bold">Google Play</span>
-                  </div>
-                </a>
-
-                <a
-                  href={siteConfig.appStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 px-4 rounded-xl bg-[#e6e8ee] text-[#181c20] flex items-center gap-2.5 shadow-xs hover:bg-[#e0e2e8] transition-colors"
-                >
-                  <span className="material-symbols-outlined text-[24px]">phone_iphone</span>
-                  <div className="flex flex-col text-left">
-                    <span className="text-[10px] uppercase text-[#46464c] leading-none">Download on the</span>
-                    <span className="font-headline text-[13px] leading-tight font-bold">App Store</span>
-                  </div>
-                </a>
+              {/* Google Play Store Badge */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-3">
+                <GooglePlayButton heightClass="h-13 sm:h-14" />
+                <span className="text-xs text-[#46464c] flex items-center gap-1.5 font-medium">
+                  <span className="material-symbols-outlined text-[#544ec2] text-[18px]">download_for_offline</span>
+                  Direct APK (v1.0 · ~38 MB)
+                </span>
               </div>
             </div>
 
