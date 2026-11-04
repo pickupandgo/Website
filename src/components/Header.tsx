@@ -22,9 +22,11 @@ export function Header() {
             className="flex items-center gap-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#544ec2] rounded-xl p-1"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <div className="w-10 h-10 rounded-xl bg-[#050719] flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.15)] group-hover:bg-[#181a2d] transition-colors">
-              <span className="material-symbols-outlined text-[#ffffff] text-[22px]">local_shipping</span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="MultipleRide Logo"
+              className="w-10 h-10 object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
+            />
             <div className="flex flex-col">
               <span className="font-headline text-[20px] font-bold tracking-tight text-[#181c20] leading-none">
                 Multiple<span className="text-[#544ec2]">Ride</span>

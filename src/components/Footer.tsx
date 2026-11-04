@@ -9,10 +9,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-14">
           {/* Brand Info Left */}
           <div className="lg:col-span-4 flex flex-col gap-4">
-            <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-[#050719] flex items-center justify-center">
-                <span className="material-symbols-outlined text-[#ffffff] text-[20px]">local_shipping</span>
-              </div>
+            <Link to="/" className="flex items-center gap-2.5 group">
+              <img
+                src="/logo.png"
+                alt="MultipleRide Logo"
+                className="w-9 h-9 object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
+              />
               <span className="font-headline text-[20px] font-bold tracking-tight text-[#181c20]">
                 Multiple<span className="text-[#544ec2]">Ride</span>
               </span>
