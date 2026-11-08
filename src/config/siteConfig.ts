@@ -16,7 +16,7 @@ export const siteConfig = {
   businessAddress: import.meta.env.VITE_BUSINESS_ADDRESS || 'Nikhil Enterprises, Commercial Corridor, Basni Phase II, Jodhpur, Rajasthan 342005, India',
   
   appStoreUrl: import.meta.env.VITE_APP_STORE_URL || 'https://apps.apple.com/app/multipleride',
-  googlePlayUrl: import.meta.env.VITE_GOOGLE_PLAY_URL || 'https://play.google.com/store/apps/details?id=com.multipleride.app',
+  googlePlayUrl: import.meta.env.VITE_GOOGLE_PLAY_URL || 'https://play.google.com/store/apps/details?id=com.multipleride.customer&pcampaignid=web_share',
   apkDownloadUrl: '/Multiple-Ride-Customer-Release.apk',
   apkFileName: 'Multiple-Ride-Customer-Release.apk',
   

@@ -814,12 +814,8 @@ export function HomePage() {
               </div>
 
               {/* Google Play Store Badge */}
-              <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-3">
+              <div className="flex flex-wrap items-center gap-3 pt-3">
                 <GooglePlayButton heightClass="h-13 sm:h-14" />
-                <span className="text-xs text-[#46464c] flex items-center gap-1.5 font-medium">
-                  <span className="material-symbols-outlined text-[#544ec2] text-[18px]">download_for_offline</span>
-                  Direct APK (v1.0 · ~38 MB)
-                </span>
               </div>
             </div>
 
